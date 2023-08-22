@@ -32,4 +32,4 @@ jobs:
           git config --global user.name "anuj-pw"
           git add .clasp.json
           git commit -m "Update .clasp.json"
-          git push
+          git push origin main
