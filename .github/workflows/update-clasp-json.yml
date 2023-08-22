@@ -30,6 +30,6 @@ jobs:
         run: |
           git config --global user.email "anuj@pw.live"
           git config --global user.name "anuj-pw"
-          git add .
+          git add .clasp.json
           git commit -m "Update .clasp.json"
           git push
