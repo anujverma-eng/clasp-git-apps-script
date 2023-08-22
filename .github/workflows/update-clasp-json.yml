@@ -1,0 +1,35 @@
+name: Update clasp.json
+
+on:
+  push:
+    branches:
+      - dev
+      - stage
+      - main
+
+jobs:
+  update-clasp-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Update clasp.json
+        run: node update-clasp-json.js
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "anujverma123ok@gmail.com"
+          git config --global user.name "Anuj Verma"
+          git add .clasp.json
+          git commit -m "Update .clasp.json"
+          git push
