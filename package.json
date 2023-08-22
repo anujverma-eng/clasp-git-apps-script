@@ -1,0 +1,25 @@
+{
+  "name": "git-clasp-appsscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "login": "clasp login",
+    "logout": "clasp logout",
+    "pull": "clasp pull",
+    "push": "clasp push",
+    "watch": "clasp push --watch",
+    "status": "clasp status",
+    "deployments": "clasp deployments"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2"
+  },
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.67"
+  }
+}
