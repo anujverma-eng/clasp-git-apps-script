@@ -28,8 +28,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --global user.email "anujverma123ok@gmail.com"
-          git config --global user.name "Anuj Verma"
+          git config --global user.email "anuj@pw.live"
+          git config --global user.name "anuj-pe"
           git add .clasp.json
           git commit -m "Update .clasp.json"
           git push
